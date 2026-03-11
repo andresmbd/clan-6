@@ -19,8 +19,6 @@ for i in range(1,5,1):
         fresa += 1
 print("\nCantidad de vainilla: ", vainilla, "\nCantidad de chocolate: ", chocolate, "\nCantidad de fresa: ", fresa)
 
-print("\nEjercicio #2: Gimnasio\n")
-
 
 
 
