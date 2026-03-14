@@ -1,46 +1,56 @@
-option = 0
+# import datetime
+# rightnow = datetime.datetime.now()
+# day_of_week = rightnow.weekday()
+# hour_day = rightnow.hour
 
-# while option != 2:
-#     entrada_principal = input("seleciona:\n 1. Hacer ejercicios\n 2. Salir\n\n-")
-#     if option == 1:
-print("Ejercicio #1: Heladeria\n")
-vainilla = 0
-chocolate = 0
-fresa = 0
+# weekend = day_of_week > 5
 
-for i in range(1,5,1):
-    print("1. Vainilla\n2. Chocolate\n3. Fresa")
-    selecciona_sabor = input("Elige tu sabor: ").lower()
-    if selecciona_sabor == "vainilla" or selecciona_sabor == "1":
-        vainilla += 1
-    elif selecciona_sabor == "chocolate" or selecciona_sabor == "2":
-        chocolate += 2
-    elif selecciona_sabor == "fresa" or selecciona_sabor == "3":
-        fresa += 1
-print("\nCantidad de vainilla: ", vainilla, "\nCantidad de chocolate: ", chocolate, "\nCantidad de fresa: ", fresa)
+# print(f"Hey! It's {hour_day}:00")
 
-print("\nEjercicio #2: Gimnasio\n")
+# if weekend:
+#     if hour_day < 10:
+#         print("go to sleep!! Its Weekend!!!")
+#     elif 10 <= hour_day <= 17:
+#         print("I recommend you to walk, wacth movies/serires,")
 
+#     else:
+#         print("go rest, you had a productive day")
 
-
-
-
+# else:
+#     if hour_day < 8:
+#         print("wake up, have your breakfast,do exersice so you get energy!!")
+#     elif 8 <= hour_day <= 17:
+#         print("Study/do your job")
+#     else:
+#         print("Go rest tomorrow is another day!")
 
 
 
-    # else:
-    #     break
-
-contraseña = ""
-while True:
-    contraseña = input("Ingrese su contraseña: ").lower()
-    if contraseña == "a123":
-        print("La contraseña es correcta")
-        break 
-    else:
-        print("contraseña incorrecta, intentalo de nuevo")
 
 
-    
-    
-    
+
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+# usuario = "riwicoder"
+# contraseña = "Qwe.123*"
+# cod_verificacion = "123456"
+
+# print("ACCESO DE SEGURIDAD\n")
+
+# usuario_ingresado = input("Ingrese su usuario: ").lower()
+# contraseña_ingresada = input("Ingrese la contraseña: ")
+
+# if usuario == usuario_ingresado and contraseña == contraseña_ingresada:
+#     print("\nPor terminos de seguridad requerimos el codigo de seguridad\n")
+#     cod_verificacion_ingresado = input("Ingrese el codigo de verificacion: ")
+
+#     if cod_verificacion == cod_verificacion_ingresado:
+#         print("\nACCESO CONCEDIDO, Bienvenido\n")
+#     else:
+#         print("\nACCESO DENEGADO, Intentelo más tarde\n")
+# else:
+#     print("\nEl usuario y/o la contraseña es incorrecto\n")
