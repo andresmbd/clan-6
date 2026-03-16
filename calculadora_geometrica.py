@@ -327,7 +327,7 @@ while opcion != 10:
     # operaciones de la esfera
     elif entrada == "esfera" or entrada == "5":
         operacion = input("Selecciona la operacion:\n" \
-                    "1. Volumen" \
+                    "1. Volumen\n" \
                     "2. Area superficial\n" \
                     "-> ").lower()
         if operacion == "volumen" or operacion == "1":
@@ -339,6 +339,7 @@ while opcion != 10:
                 r = float(input("Ingrese el valor del radio (float): "))
                 v = (4 / 3) * (3.14 * (r ** 3))
                 print(f"Resultado Volumen = {v:.2f} cm^3")
+                
             elif entrada == "radio" or operacion == "2":
                 v = float(input("Ingrese el valor del volumen (float): "))
                 r = ((3 * v) / (4 * 3.14)) ** (1 / 3)
