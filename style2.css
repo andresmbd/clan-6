@@ -1,0 +1,11 @@
+
+.body-2{
+    background-image: url("./images/erenencaminos.avif");
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-attachment: scroll;
+
+}
+.main-2{
+    gap: 5rem;
+}

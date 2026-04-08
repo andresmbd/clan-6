@@ -14,6 +14,7 @@ body {
     align-items: center;
     min-height: 100vh; /* Obliga al body a medir toda la pantalla */
     flex-direction: column; /* Esto hizo que se hiciera posible que el header, main y footer se alineen verticalmente*/
+
     background-image: url('./images/TitanColosalAsomado.webp');
     background-repeat: no-repeat; /* Evita que la imagen se repita como mosaico */
     background-size: cover; /* Cubrir el espaciode pantalla*/
@@ -110,3 +111,27 @@ h1 {
     padding: 50px 20px;
     
 }
+
+.barra-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1rem;
+
+}
+.boton-pagina{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #042aaa;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 2rem;
+}
+.boton-pagina:hover{
+    background-color: aliceblue;
+    color: #000000;
+}
+
+/* Segmento 2da pag*/
+
