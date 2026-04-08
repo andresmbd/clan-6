@@ -1,6 +1,6 @@
 
 
-def crear (diccionario:dict): # se agrega un nuevo item 
+def crear (diccionario:dict): # se agrega un nuevo item
     id_ = int(input("Digite el id: "))
     nombre = input("Digite un nombre: ").capitalize()
     apellido = input("Digite el apellido: ").capitalize()
@@ -10,8 +10,6 @@ def crear (diccionario:dict): # se agrega un nuevo item
     # Nuevo coder
     diccionario[nuevo] = {"id":id_,"nombre":nombre, "apellido": apellido,"edad": edad, "nvlIngles": nivel_ingles}
     return diccionario
-
-
 
 def mostrar(diccionario:dict):
     for clave, valor in diccionario.items():
@@ -32,7 +30,6 @@ def buscar(diccionario:dict):
     else:
         print("No encontrado")
 
-
 def eliminar(diccionario:dict):
     clave = int(input("ingrese la clave del dict a eliminar: "))
     diccionario.pop(clave, "No existe")   
@@ -45,9 +42,11 @@ def actualizar(diccionario):
     "apellido": str,
     "edad": int,
     "nivel": str
-}
+    }
+
     correcto = False
-    while correcto == False:
+
+    while correcto == False:        
         try:
             clave = int(input("Ingresa la Clave: "))
             correcto = True

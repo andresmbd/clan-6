@@ -7,82 +7,106 @@
 
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: brown;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Obliga al body a medir toda la pantalla */
+    flex-direction: column; /* Esto hizo que se hiciera posible que el header, main y footer se alineen verticalmente*/
+    background-image: url('./images/TitanColosalAsomado.webp');
+    background-repeat: no-repeat; /* Evita que la imagen se repita como mosaico */
+    background-size: cover; /* Cubrir el espaciode pantalla*/
+    background-position: center;
+    background-attachment: fixed;
+
+
+    
 }
 
 
 .tarjeta {
-    background-color: white;
-    width: 350px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    width: 300px;
     padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgb(255, 0, 0);
     text-align: center;
     transition: transform 0.3s ease;
 }
 
 
 .tarjeta:hover {
-    transform: translateY(-10px);
+    transform: translateZ(20px)
 }
 
 .foto-perfil {
-    width: 100px;
-    height: 100px;
-    background-color: #007bff;
+    width: 150px;
+    height: 150px;
     border-radius: 50%; 
     margin: 0 auto 1rem;
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+
 }
 
 h1 {
-    color: #333;
+    color: #464545;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
-.subtitulo {
-    color: #666;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-}
-
-.habilidades {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 1.5rem;
-}
-
-.tag {
-    background-color: #e7f3ff;
-    color: #007bff;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-}
-
-.btn-contacto {
-    margin-top: 2rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
+.boton-link{
+    display: inline-block;
     padding: 10px 20px;
+    background-color: #ee0000;
+    color: white;
+    text-decoration: dashed; /* Quita la línea de subrayado del link */
     border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+    margin-top: 20px;
+} 
+.boton-link:hover{
+    box-shadow: 0 6px 12px rgb(255, 0, 0);
+    background-color: #ff0000;
 }
 
-.btn-contacto:active {
-    background-color: #0056b3;
-}
 .main{
     display: flex;
     gap: 3rem;
+    perspective: 1000px;
+    flex: 1; /* Empuja al footer hacia abajo del todo */
+}
+
+.introduccion{
+    display: flex;
+    gap: 1rem;
+    text-align: center; /* Centra h1 y p horizontalmente*/
+    padding: 50px 20px; /*le da aire arriba y abajoo */
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+
+}
+.introduccion h1{
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+    
+
+}
+.logo{
+    width: 100px;
+    height: auto;
+    object-fit: cover; /*Evita que la imagen se estire feo */
+    
+}
+.introduccion p{
+    margin-top: 30px;
+}
+.pie-pagina{
+    width: 100%; /* Cubre todo el ancho horizontal */
+    margin-top: 30px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px 20px;
+    
 }
