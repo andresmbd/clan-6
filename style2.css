@@ -26,7 +26,6 @@ aside{
     padding: 0;
     background: white;
     height: max-content;
-
 }
 
 .lista-sidebar{
@@ -35,12 +34,8 @@ aside{
     padding: 3rem;
     border: rgb(109, 109, 109) solid;
     max-height: max-content;
-    
 }
 
-.lista{
-    padding-bottom: 5rem;
-}
 header{
     background-color: brown;
     display: flex;
