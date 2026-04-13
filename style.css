@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: brown;
+    background-color: rgb(211, 94, 94);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,9 +20,7 @@ body {
     background-size: cover; /* Cubrir el espaciode pantalla*/
     background-position: center;
     background-attachment: fixed;
-
-
-    
+  
 }
 
 
@@ -85,9 +83,9 @@ h1 {
     0%{
         transform: translateX(0); /* Empieza en la posición original */
     }
-    100%{/* Se mueve hacia la derecha hasta que pase la cuarta parte del tren */
+    100%{/* Se mueve hacia la izquierda hasta que pase la mitad parte del tren */
         /* (Como duplicamos las tarjetas en HTML, el salto al inicio es invisible) */
-        transform: translateX(25%);
+        transform: translateX(-50%);
     }
 }
 
