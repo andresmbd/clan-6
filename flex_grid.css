@@ -1,0 +1,20 @@
+h2{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    align-content: center;
+    text-align: center;
+    border: rgb(0, 0, 0) solid;
+
+}
+.contenedor{
+    display: flex;
+    border: black solid;
+    gap: 1rem;
+    width: 600px;
+    height: 600px;
+    flex-direction: row-reverse;
+}
+span{
+    font-family: 'Courier New', Courier, monospace;
+}
