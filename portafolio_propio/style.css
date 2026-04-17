@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    border: 3px solid;
+    display: grid;
+    height: 100vh;
+}
+
+.contenedor-header{
+    background-color: rgba(137, 43, 226, 0.527);
+}
+.barra-nav{
+    display: grid;
+    background-color: rgba(252, 0, 0, 0.589);
+    border: 3px solid;
+    grid-row: 3/7;
+}
+.contenedor-main{
+
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20, 1fr);
+    padding: 30px;
+}
+
+.secciones{
+    background-color: rgba(255, 105, 180, 0.568);
+    grid-column: 3/21;
+    grid-row: 1/21;
+
+}
