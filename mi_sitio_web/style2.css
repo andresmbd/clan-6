@@ -31,7 +31,7 @@ aside{
     gap: 3rem;
     background-color: rgb(144, 32, 236);
     position: fixed;
-    background: white;
+    background: rgba(255, 255, 255, 0.418);
 }
 a{
     text-decoration: none;
@@ -64,13 +64,14 @@ main h2{
 }
 main{
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     width: 100%;
     padding: 10px;
     flex-grow: 1; /* Tomar todo el espacio extra*/
     flex-shrink: 1; /*Si la pantalla se encoge, entoces se adapta*/
     flex-basis: 0; /*No importa el contenido actual su tamaño dependerá de cuánto espacio sobre en el body.*/
-  
+    background-color: blue;
 }
 main .contenedor-main{
     display: flex;

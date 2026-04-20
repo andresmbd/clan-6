@@ -8,12 +8,12 @@
     </head>
     <body>
         <h2>FLEXBOX</h2>
-        <div class="div">
+        <div class="flex">
             <div>
                 <h2>Propiedad-Contenedor 1</h2>
                 <span>flex-direction: row-reverse;</span>
-                <div class="contenedor">
-                    <h3>1</h3>
+                <div class="div contenedor">
+                    <h3>1</h3> 
                     <h3>2</h3>
                     <h3>3</h3>
                 </div>
@@ -21,7 +21,7 @@
             <div>
                 <h2>Propiedad-Contenedor 2</h2>
                 <span>justify-content: space-evenly;</span>
-                <div class="contenedor-2">
+                <div class="div contenedor-2">
                     <h3>1</h3>
                     <h3>2</h3>
                     <h3>3</h3>
@@ -34,7 +34,7 @@
                     justify-content: center;
 
                 </span>
-                <div class="contenedor-3">
+                <div class="div contenedor-3">
                     <h3>1</h3>
                     <h3>2</h3>
                     <h3>3</h3>
@@ -53,7 +53,7 @@
                     justify-content: flex-end;
 
                 </span>
-                <div class="contenedor-4">
+                <div class="div contenedor-4">
                     <h3>1</h3>
                     <h3>2</h3>
                     <h3>3</h3>
@@ -67,7 +67,7 @@
                         flex-shrink: 1;<br>
                         flex-basis: auto;
                 </span>
-                <div class="contenedor-5">
+                <div class="div contenedor-5">
                     <h3 id="h1">1</h3>
                     <h3 id="h3">2</h3>
                     <h3 id="h3">3</h3>
@@ -79,7 +79,7 @@
                     align-items: flex-end;<br>
                     align-self: flex-start;
                 </span>
-                <div class="contenedor-6">
+                <div class="div contenedor-6">
                     <h3>1</h3>
                     <h3 class="h3">2</h3>
                     <h3>3</h3>
@@ -87,17 +87,35 @@
             </div>
         </div>
         <h2>GRID LAYOUT</h2>
-        <div class="container">
-            <div class="elemento elemento-1">1</div>
-            <div class="elemento elemento-2">2</div>
-            <div class="elemento elemento-3">3</div>
-            <div class="elemento elemento-4">4</div>
-        </div><br><br>
-        <div class="container-2">
-            <div class="element element-1">1</div>
-            <div class="element element-2">2</div>
-            <div class="element element-3">3</div>
-            <div class="element element-4">4</div>
+        <div class="flex">
+            <div>
+                <h2>Propiedad-Contenedor grid 1</h2>
+                <span>
+                    display: grid;<br>
+                    grid-template-columns: repeat(6,1fr);<br>
+                    grid-template-rows: repeat(3,1fr);
+                </span>
+                <div class="div container">  
+                    <div class="elemento elemento-1">1</div>
+                    <div class="elemento elemento-2">2</div>
+                    <div class="elemento elemento-3">3</div>
+                    <div class="elemento elemento-4">4</div>
+                </div>
+            </div>
+            <div>
+                <h2>Propiedad-Contenedor grid 2</h2>
+                <span>
+                     display: grid;<br>
+                    grid-template-rows: 1fr 1fr 1fr 1fr;<br>
+                    grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+                </span>
+                <div class="div container-2">
+                    <div class="elemento element-1">1</div>
+                    <div class="elemento element-2">2</div>
+                    <div class="elemento element-3">3</div>
+                    <div class="elemento element-4">4</div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
@@ -105,11 +123,4 @@
 
 
 
-<div class="container">
-    <div class="elemento">
-        <div class="elemento-1">1</div>
-        <div class="elemento-2">2</div>
-        <div class="elemento-3">3</div>
-        <div class="elemento-4">4</div>
-    </div>
-</div>
+
