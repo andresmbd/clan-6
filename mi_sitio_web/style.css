@@ -76,7 +76,7 @@ h1 {
     flex: 1; /* Empuja al footer hacia abajo del todo */
     width: max-content; /* Obliga al tren a ser tan largo como todas las tarjetas juntas */
     /*propiedad|busca el @keframe| duracion del tren|velocidad constante|la repeticion */
-    animation: scroll-infinito 40s linear infinite;
+    animation: scroll-infinito 20s linear infinite;
 
 }
 @keyframes scroll-infinito {
