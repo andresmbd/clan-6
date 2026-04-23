@@ -1,0 +1,44 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --principal-color: #121212; /*principal background color*/
+    --principal-text-color: #B87333; /*headings and bottons*/
+    --color-text: #F5F5DC; /* color for paragraph*/
+    --color-cards: #2C2C2C; /*Color for cards and secundary sections*/
+    --color_detail: #1B3022; /* for fine deteils and icons*/
+
+}
+.fondo{
+    height: 100vh;
+    background-image: url(images/fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+header{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 1.5rem;
+}
+body{
+    grid-template-rows: repeat(3,1fr);
+    background-color: var(--principal-color);
+
+}
+.headers{
+    color: var(--principal-text-color);
+}
+.texts{
+    color: var(--color-text);
+}
+img{
+    width: 200px;
+}
+/* header{
+    background-color: var(--principal-color);
+    display: flex;
+    
+} */
