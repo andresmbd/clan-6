@@ -8,8 +8,8 @@ body{
 article{
     padding: 1rem;
 }
-section.fondo{
-    background-image: url(img/descarga.jpeg);
+.fondo{
+    background-image: url(img/fondo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,8 +27,8 @@ header{
     font-weight: bold;
     font-size: 1.5rem;
 }
-section.fondo-bajo{
-    background-image: url(img/descarga.jpeg);
+.fondo-bajo{
+    background-image: url(img/fondofinal.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
