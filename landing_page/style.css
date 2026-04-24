@@ -3,11 +3,11 @@
 }
 :root{
     --principal-color: #121212; /*principal background color*/
-    --principal-text-color: #B87333; /*headings and bottons*/
-    --color-text: #F5F5DC; /* color for paragraph*/
+    --principal-text-color: #ce8037; /*headings and bottons*/
+    --color-text: #F5F5DC; /* color for paragraph and text in general*/
     --color-cards: #2C2C2C; /*Color for cards and secundary sections*/
-    --color_detail: #1B3022; /* for fine deteils and icons*/
-
+    --color_detail: #1b3022; /* for fine deteils and icons*/
+    --font-text: 1.2rem;
 }
 .fondo{
     height: 100vh;
@@ -15,30 +15,82 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 header{
     position: absolute;
     top: 40%;
-    left: 25%;
-    font-size: 1.5rem;
 }
 body{
-    grid-template-rows: repeat(3,1fr);
     background-color: var(--principal-color);
 
 }
-.headers{
+button{
+    font-size: large;
+    background: transparent;
     color: var(--principal-text-color);
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background-color: var(--principal-text-color);
+    color: var(--color-text);
+    border: var(--principal-text-color);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: var(--principal-color);
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ul li{
+    list-style: none;
+    font-size: var(--font-text);
+
+}
+ul li a{
+    text-decoration: none;
+    color: var(--color-text);
+
+}
+
+.headings{
+    color: var(--principal-text-color);
+    text-align: center;
 }
 .texts{
     color: var(--color-text);
+    font-size: var(--font-text);
 }
 img{
     width: 200px;
 }
-/* header{
-    background-color: var(--principal-color);
-    display: flex;
-    
-} */
+
+table{
+    width: 100%;
+}
+table,th,td{
+    border: 5px solid var(--color_detail);
+    border-collapse: collapse;
+    color: var(--principal-text-color);
+    font-size: var(--font-text);
+}
+th,td{
+    padding: 5px;
+    text-align: center;
+}
+#festival{
+    padding: 0 50px;
+    text-align: center;
+}
