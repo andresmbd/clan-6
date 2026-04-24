@@ -14,21 +14,21 @@
         <h2 class="headings">Discover how the world's top chefs transform classic ingredients using cutting-edge techniques.</h2>
         <button>BUY TICKETS</button>
     </header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#schedules">Schedules</a></li>
-                <li><a href="#festival">About Festival</a></li>
-                <li><a href="#multimedia">Multimedia</a></li>
-                <button>Book Now</button>
-                <img src="images/logo_img.png" alt="logo">
-            </ul>
-        </nav>
-        <section class="fondo"></section>
+        <div id="cont-nav">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#schedules">Schedules</a></li>
+                    <li><a href="#festival">About Festival</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                    <button>Book Now</button>
+                    <img src="images/logo_img.png" alt="logo">
+                </ul>
+            </nav>
+        </div>
         <main>
-            <section id="home">  <!--Shocking, useful for introduction and attract attention.--> 
-                   
-            </section>
+            <section class="fondo" id="home"></section> <!--Shocking, useful for introduction and attract attention.--> 
+        
             <section id="schedules"> <!--listing events or workshop.-->
                 <h2 class="headings">Schedules</h2>
                 <table>
@@ -57,25 +57,37 @@
             <section id="festival"> <!--general Información  about event concept-->
                 <h2 class="headings">Festival Information</h2>
                 <h3 class="headings">Beyond The Plate: A Sensory Revolution</h3>
-                <p class="texts">Fusión Gourmet was born from the idea that cooking is the purest form of alchemy. We don’t just serve food; we orchestrate encounters between modern chemistry and ancestral flavors. Every bite at our festival is a work of art designed to challenge your senses and help you rediscover what you thought you knew about gastronomy</p>
-                <i class="fa-thin fa-fire-flame-curved"></i>
+                <div id="fest-descrip">
+                    <div class="icons">
+                        <i class="fa-solid fa-fire"></i>
+                        <i class="fa-brands fa-pagelines"></i>
+                    </div>
+                    <p class="texts">Fusión Gourmet was born from the idea that cooking is the purest form of alchemy. We don’t just serve food; we orchestrate encounters between modern chemistry and ancestral flavors. Every bite at our festival is a work of art designed to challenge your senses and help you rediscover what you thought you knew about gastronomy</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-martini-glass-citrus"></i>
+                        <i class="fa-solid fa-kitchen-set"></i>
+                    </div>
+                </div>
             </section> 
             <section id="multimedia"> <!--Image gallery or video simulations embedded.-->
                 <h2 class="headings">Multimedia</h2>
-                <img src="images/comida1.jpg">
-                <img src="images/comida2.jpeg">
-                <img src="images/comida3.jpg">
-                <img src="images/comida4.webp">
-                <img src="images/comida5.jpg">
-                <img src="images/comida6.jpg">
-                <img src="images/comida7.jpg">
-                <img src="images/comida8.jpg">
-                <img src="images/comida9.jpg">
-                <img src="images/comida11.jpg">
-                <img src="images/comida12.avif">
-                <img src="images/comida12+1.webp">
-                <img src="images/comida14.webp">
-                <img src="images/comida15.jpeg">
+                <div id="cont-gal">
+                    <article class="gallery"><img src="images/comida1.jpg"></article>
+                    <article class="gallery"><img src="images/comida2.jpeg"></article>
+                    <article class="gallery"><img src="images/comida3.jpg"></article>
+                    <article class="gallery"><img src="images/comida4.webp"></article>
+                    <article class="gallery"><img src="images/comida5.jpg"></article>
+                    <article class="gallery"><img src="images/comida6.jpg"></article>
+                    <article class="gallery"><img src="images/comida7.jpg"></article>
+                    <article class="gallery"><img src="images/comida8.jpg"></article>
+                    <article class="gallery"><img src="images/comida9.jpg"></article>
+                    <article class="gallery"><img src="images/comida10.jpg"></article>
+                    <article class="gallery"><img src="images/comida11.jpg"></article>
+                    <article class="gallery"><img src="images/comida12.avif"></article>
+                    <article class="gallery"><img src="images/comida13.webp"></article>
+                    <article class="gallery"><img src="images/comida14.webp"></article>
+                    <article class="gallery"><img src="images/comida15.jpeg"></article>
+                </div>
             </section> 
         </main>
         <footer> <!--Contact information and links-->

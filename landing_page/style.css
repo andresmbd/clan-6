@@ -9,21 +9,28 @@
     --color_detail: #1b3022; /* for fine deteils and icons*/
     --font-text: 1.2rem;
 }
-.fondo{
+section.fondo{
     height: 100vh;
     background-image: url(images/fondo.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     /* margin-bottom: 2rem; */
 }
 header{
+    margin-top: 110px;
     position: absolute;
-    top: 40%;
+    height: 100%;
+    background-color: rgba(80, 79, 79, 0.295);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 body{
     background-color: var(--principal-color);
-
 }
 button{
     font-size: large;
@@ -34,6 +41,7 @@ button{
     border-radius: 15px;
     padding: 5px;
     transition: all 0.3s ease-in-out;
+    width: 10rem;
 }
 button:hover{
     background-color: var(--principal-text-color);
@@ -42,10 +50,13 @@ button:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
+#cont-nav{height: 110px;}
+
 nav{
     position: fixed;
     width: 100%;
     background-color: var(--principal-color);
+    padding: 0 0 0 20px;
 }
 
 ul{
@@ -94,3 +105,38 @@ th,td{
     padding: 0 50px;
     text-align: center;
 }
+#fest-descrip{
+    display: flex;
+    gap: 1rem;
+    ;
+
+}
+i{
+    color: var(--principal-text-color);
+    font-size:var(--font-text);
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/* .gallery{
+    
+    border: 5px solid var(--color_detail);
+    padding-bottom: 2rem;
+    width: max-content;
+    background-color: #1b302271;
+}
+    
+#cont-gal{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+} 
+
+
+#cont-gal .gallery img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+} */
