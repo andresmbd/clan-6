@@ -7,7 +7,9 @@
     --color-text: #F5F5DC; /* color for paragraph and text in general*/
     --color-cards: #2C2C2C; /*Color for cards and secundary sections*/
     --color_detail: #1b3022; /* for fine deteils and icons*/
+    --backgraund-detail:#1b302231; /*Background color of details*/
     --font-text: 1.2rem;
+    --border-circle: 20px;
 }
 section.fondo{
     height: 100vh;
@@ -31,6 +33,19 @@ header{
 }
 body{
     background-color: var(--principal-color);
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    scroll-margin-top: 110px;
 }
 button{
     font-size: large;
@@ -57,20 +72,22 @@ nav{
     width: 100%;
     background-color: var(--principal-color);
     padding: 0 0 0 20px;
+    top:0;
+    z-index: 1000;
 }
 
-ul{
+.ul-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-ul li{
+.ul-nav li{
     list-style: none;
     font-size: var(--font-text);
 
 }
-ul li a{
+.ul-nav li a{
     text-decoration: none;
     color: var(--color-text);
 
@@ -93,6 +110,7 @@ table{
 }
 table,th,td{
     border: 5px solid var(--color_detail);
+    background-color: var(--backgraund-detail);
     border-collapse: collapse;
     color: var(--principal-text-color);
     font-size: var(--font-text);
@@ -108,8 +126,6 @@ th,td{
 #fest-descrip{
     display: flex;
     gap: 1rem;
-    ;
-
 }
 i{
     color: var(--principal-text-color);
@@ -120,23 +136,148 @@ i{
     flex-direction: column;
     gap: 2rem;
 }
-/* .gallery{
-    
-    border: 5px solid var(--color_detail);
-    padding-bottom: 2rem;
-    width: max-content;
-    background-color: #1b302271;
-}
-    
-#cont-gal{
+.carousel{ /* Handles only the overflow */
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-} 
+    /* overflow: hidden; */
+    overflow-x: auto; 
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.grid{ /* carousel Group, the one that should be moved within the container*/
+    display: flex;
+    height: 500px;
+    gap: 1rem;
+    animation: spin 20s infinite linear;
+    padding-right: 1rem; 
+    background-color: var(--backgraund-detail);
+}
+.gallery{
+    flex-grow: 0;
+    flex-shrink: 0; /*avoids compressing the elements*/
+    flex-basis: 500px; 
+    display: grid;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(10,1fr);
+    gap: 1rem;
+    /* background-color: var(--backgraund-detail); */
+}
+@keyframes spin{
+    from{translate: 0;}
+    to{translate: -100%;} 
+}
+.element{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-circle);
+    border: 3px solid var(--color_detail);
+}
+.element1{
+    
+    grid-column: 1/5;
+    grid-row: 1/11;
+    background-image: url(images/comida1.jpg);
+    
+}
+.element2{
+    background-image: url(images/festival1.webp);
+    
+    grid-column: 5/11;
+    grid-row: 1/6;
+}
+.element3{
+    background-image: url(images/festival2.webp);
+    
+    grid-row: 6/11;
+    grid-column: 5/11;
+}
+.element4{
+    background-image: url(images/festival3.jpg);
+    grid-column: 1/11;
+    grid-row: 1/4;
+}
+.element5{
+    background-image: url(images/comida2.jpeg);
+    grid-row: 4/7;
+    grid-column: 1/11;
+}
+.element6{
+    background-image: url(images/festival4.jpeg);
+    grid-column: 1/11;
+    grid-row: 7/11;
+}
+.element7{
+    background-image: url(images/festival5.webp);
+    grid-row: 1/7;
+    grid-column: 1/5;
+}
+.element8{
+    background-image: url(images/festival6.jpg);
+    grid-column: 5/11;
+    grid-row: 1/7;
+}
+.element9{
+    background-image: url(images/comida3.webp);
+    grid-column: 1/11;
+    grid-row: 7/11;
+}
+.element10{
+    background-image: url(images/festival7.webp);
+    grid-column: 1/4;
+    grid-row: 1/11;
+}
+.element11{
+    background-image: url(images/festival8.webp);
+    grid-column: 4/8;
+    grid-row: 1/11;
+}
+.element12{
+    background-image: url(images/festival9.webp);
+    grid-column: 8/11;
+    grid-row: 1/11;
+}
+.element13{
+    background-image: url(images/comida4.jpg);
+    grid-row: 1/6;
+    grid-column: 1/6;
+}
+.element14{
+    background-image: url(images/festival10.jpeg);
+    grid-row: 6/11;
+    grid-column: 1/6;
+}
+.element15{
+    background-image: url(images/comida5.jpg);
+    grid-column: 6/11;
+    grid-row: 1/11;
+}
+footer{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer .icons-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+footer .ul-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-#cont-gal .gallery img{
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-} */
+footer .ul-footer li{
+    list-style: none;
+    font-size: var(--font-text);
+}
+footer .ul-footer li a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+footer p{
+    text-align: center;
+}

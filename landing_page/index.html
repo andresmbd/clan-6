@@ -16,7 +16,7 @@
     </header>
         <div id="cont-nav">
             <nav>
-                <ul>
+                <ul class="ul-nav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#schedules">Schedules</a></li>
                     <li><a href="#festival">About Festival</a></li>
@@ -28,8 +28,7 @@
         </div>
         <main>
             <section class="fondo" id="home"></section> <!--Shocking, useful for introduction and attract attention.--> 
-        
-            <section id="schedules"> <!--listing events or workshop.-->
+            <section class="section" id="schedules"> <!--listing events or workshop.-->
                 <h2 class="headings">Schedules</h2>
                 <table>
                     <tr>  <!--row-->
@@ -38,7 +37,7 @@
                         <th>Invited Chef</th>
                     </tr>
                     <tr>
-                        <td>17:00</td>
+                        <td>17:00</td> <!--table data-->
                         <td>Grand opening and cutting-edge cocktails</td>
                         <td>Chef Elena Arzak</td>
                     </tr>
@@ -54,7 +53,7 @@
                     </tr>
                 </table>
             </section>
-            <section id="festival"> <!--general Información  about event concept-->
+            <section class="section" id="festival"> <!--general Información  about event concept-->
                 <h2 class="headings">Festival Information</h2>
                 <h3 class="headings">Beyond The Plate: A Sensory Revolution</h3>
                 <div id="fest-descrip">
@@ -69,29 +68,94 @@
                     </div>
                 </div>
             </section> 
-            <section id="multimedia"> <!--Image gallery or video simulations embedded.-->
-                <h2 class="headings">Multimedia</h2>
-                <div id="cont-gal">
-                    <article class="gallery"><img src="images/comida1.jpg"></article>
-                    <article class="gallery"><img src="images/comida2.jpeg"></article>
-                    <article class="gallery"><img src="images/comida3.jpg"></article>
-                    <article class="gallery"><img src="images/comida4.webp"></article>
-                    <article class="gallery"><img src="images/comida5.jpg"></article>
-                    <article class="gallery"><img src="images/comida6.jpg"></article>
-                    <article class="gallery"><img src="images/comida7.jpg"></article>
-                    <article class="gallery"><img src="images/comida8.jpg"></article>
-                    <article class="gallery"><img src="images/comida9.jpg"></article>
-                    <article class="gallery"><img src="images/comida10.jpg"></article>
-                    <article class="gallery"><img src="images/comida11.jpg"></article>
-                    <article class="gallery"><img src="images/comida12.avif"></article>
-                    <article class="gallery"><img src="images/comida13.webp"></article>
-                    <article class="gallery"><img src="images/comida14.webp"></article>
-                    <article class="gallery"><img src="images/comida15.jpeg"></article>
+            <section class="section" id="multimedia"> <!--Image gallery or video simulations embedded.-->
+                <h2 class="headings">Multimedia</h2> 
+                <div class="carousel">
+                    <div class="grid"> <!--The carusel group-->
+                        <div class="gallery">
+                            <article class="element element1"></article>
+                            <article class="element element2"></article>
+                            <article class="element element3"></article>
+                        </div>
+                        <div class="gallery">
+                            <article class="element element4"></article> <!--<img src="images/festival3.jpg">-->
+                             <article class="element element5"></article> <!--<img src="images/comida2.jpeg">-->
+                             <article class="element element6"></article> <!--<img src="images/festival4.avif">-->
+                        </div>
+                        <div class="gallery">
+                            <article class="element element7"></article> <!--<img src="images/festival5.webp">-->
+                            <article class="element element8"></article> <!--<img src="images/festival6.jpg">-->
+                            <article class="element element9"></article> <!--<img src="images/comida3.webp">-->
+                        </div>
+                        <div class="gallery">
+                            <article class="element element10"></article> <!--<img src="images/festival7.webp">-->
+                            <article class="element element11"></article> <!--<img src="images/festival8.webp">-->
+                            <article class="element element12"></article> <!--<img src="images/festival9.webp">-->
+                        </div>
+                        <div class="gallery">
+                            <article class="element element13"></article> <!--<img src="images/comida4.jpg">-->
+                            <article class="element element14"></article> <!--<img src="images/festival10.jpeg">-->
+                            <article class="element element15"></article> <!--<img src="images/comida5.jpg">-->
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="grid">
+                        <div class="gallery">
+                            <article class="element element1"></article>
+                            <article class="element element2"></article>
+                            <article class="element element3"></article>
+                        </div>
+                        <div class="gallery">
+                            <article class="element element4"></article> <!--<img src="images/festival3.jpg">-->
+                             <article class="element element5"></article> <!--<img src="images/comida2.jpeg">-->
+                             <article class="element element6"></article> <!--<img src="images/festival4.avif">-->
+                        </div>
+                        <div class="gallery">
+                            <article class="element element7"></article> <!--<img src="images/festival5.webp">-->
+                            <article class="element element8"></article> <!--<img src="images/festival6.jpg">-->
+                            <article class="element element9"></article> <!--<img src="images/comida3.webp">-->
+                        </div>
+                        <div class="gallery">
+                            <article class="element element10"></article> <!--<img src="images/festival7.webp">-->
+                            <article class="element element11"></article> <!--<img src="images/festival8.webp">-->
+                            <article class="element element12"></article> <!--<img src="images/festival9.webp">-->
+                        </div>
+                        <div class="gallery">
+                            <article class="element element13"></article> <!--<img src="images/comida4.jpg">-->
+                            <article class="element element14"></article> <!--<img src="images/festival10.jpeg">-->
+                            <article class="element element15"></article> <!--<img src="images/comida5.jpg">-->
+                        </div>
+                    </div>
                 </div>
             </section> 
         </main>
         <footer> <!--Contact information and links-->
-
+            <div class="icons-footer">
+                <a href="//www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="//www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="//wwww.x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="//www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div>
+                <h6 class="headings">HELP</h6>
+                <ul class="ul-footer">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Accessibility</a></li>
+                    <li><a href="">Satisfaction Garantee</a></li>
+                    <li><a href="">Manage Subcriptions</a></li>
+                </ul>
+            </div>
+            <!-- <div>
+                <h6>Resourses</h6>
+                <ul class="ul-footer">
+                    <li>Blog</li>
+                    <li>Knoledge Base</li>
+                    <li>Customer Review</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div> -->
+            <p class="texts">&copy;2026 Bonneville Distribution Inc. All Rights Reserved</p>
         </footer>
 
 </body>
